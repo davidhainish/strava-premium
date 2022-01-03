@@ -1,0 +1,30 @@
+@use '../../assets/fonts/playlist-script/playlist-script.scss';
+
+:host {
+  height: 100%;
+  margin: 0;
+  font-size: 24px;
+}
+
+.bgimg {
+  background-image: url('../../assets/images/cycling.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  filter: brightness(115%) contrast(90%) opacity(85%) blur(1px);
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Playlist Script';
+  font-size: 64px;
+  color: #fff;
+  line-height: 1.1;
+  text-shadow: 4px 1px 12px #00000033;
+}

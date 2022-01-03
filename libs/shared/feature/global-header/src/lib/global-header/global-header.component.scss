@@ -1,0 +1,110 @@
+strava-premium-global-header,
+strava-premium-global-header * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#global-header {
+  // position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #f0f0f5;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.025);
+  line-height: 18px;
+  z-index: 50;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .nav-bar {
+    height: 55px;
+    position: relative;
+
+    .branding {
+      background-image: url('../../assets/logo.svg');
+      background-size: cover;
+      background-position: left top;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      height: 24px;
+      width: 117px;
+      float: left;
+      margin-top: 17.5px;
+
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .global-nav {
+      margin-left: 20px;
+      float: left;
+    }
+
+    .nav-group {
+      position: relative;
+      z-index: 11;
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 55px;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+
+      .nav-item {
+        height: 100%;
+        padding: 0 12px;
+        z-index: 33;
+        color: #494950;
+        -webkit-transition: color 0.15s ease;
+        transition: color 0.15s ease;
+        cursor: pointer;
+        outline: none;
+
+        &.selected {
+            -webkit-box-shadow: inset 0 -2px 0 0 #fc5200;
+            box-shadow: inset 0 -2px 0 0 #fc5200;
+            z-index: 33;
+        }
+
+        &:visited {
+          color: #494950;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+          color: #fc5200;
+          text-decoration: none;
+        }
+      }
+
+      .nav-group {
+      }
+    }
+
+    .nav-item,
+    .nav-link {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+}

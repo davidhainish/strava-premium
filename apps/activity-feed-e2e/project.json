@@ -1,0 +1,28 @@
+{
+  "root": "apps/activity-feed-e2e",
+  "sourceRoot": "apps/activity-feed-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/activity-feed-e2e/cypress.json",
+        "devServerTarget": "activity-feed:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "activity-feed:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/activity-feed-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": ["activity-feed", "type:app"],
+  "implicitDependencies": ["activity-feed"]
+}

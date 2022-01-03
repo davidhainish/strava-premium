@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/feature/global-header",
+  "sourceRoot": "libs/shared/feature/global-header/src",
+  "prefix": "strava-premium",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/feature/global-header"],
+      "options": {
+        "jestConfig": "libs/shared/feature/global-header/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/feature/global-header/src/**/*.ts",
+          "libs/shared/feature/global-header/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "projects": {
+    "activity-feed": "apps/activity-feed",
+    "activity-feed-e2e": "apps/activity-feed-e2e",
+    "api": "apps/api",
+    "shared-feature-global-header": "libs/shared/feature/global-header",
+    "shared-ui-assets": "libs/shared/ui/assets",
+    "shared-ui-styles": "libs/shared/ui/styles",
+    "shell": "apps/shell",
+    "shell-e2e": "apps/shell-e2e"
+  }
+}
